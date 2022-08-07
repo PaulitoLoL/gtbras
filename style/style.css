@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+     --corn: #0a6348;
+     --cord: #093f2f;
+     --corg: #4e8d63;
+     --cor0: #00FCA8;
+     --cor1: #00BD7E;
+     --cor2: #07885d;
+     --cor3: #00704A;
+     --cor4: #007D53;
+     --cor5: #034731;
+
+     --font-padrao: 'arial', 'Helvica', 'Verdana', 'sans-serif';
+     --font-destaque: 'Bungee';
+     --font-mono: 'Roboto Mono';
+     --font-gts: 'Prompt';
+     --font-nav: 'Roboto Slab';
+     --font-pes: 'Open Sans'
+}
+
+
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--corn), var(--cord));
+    margin: 0px;
+    padding: 30px;
+    max-height: 160px;
+}
+
+header h1{
+    margin: 0px;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 0px;
+    font-size: 3.1em;
+    max-height: 120px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.315);
+}
+
+header p{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    font-size: 1.1em;
+    font-family: var(--font-mono);
+    max-width: 500px;
+    margin: auto;
+    color: rgb(84, 231, 133);
+    text-shadow: 0px 0px 4px rgba(170, 240, 170, 0.589);
+}
+
+
+.menu{
+    background-color:rgb(13, 114, 63) ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+}
+
+.menu > a{
+    color: white;
+    padding-right: 30px;
+    text-decoration: none;
+    font-family: var(--font-nav), 'cursive';
+    font-weight: lighter;
+    font-size: 1.2em;
+    
+}
+
+.menu > a:hover{
+    background-color: #044441;
+    color: #71ffcb;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-shadow: -1px 1px 4px #57c49c4f;
+}
+
+#escolha{
+    color: rgb(9, 165, 92);
+    font-size: 2.4em;
+    font-family: var(--font-mono);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(13, 230, 128, 0.377);
+    padding: 15px;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+}
+
+::-webkit-input-placeholder{
+    color: #1e6169;
+}
+
+.pesquisa{
+    position: absolute;
+    bottom: 53%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    background-color: #044441;
+    height: 36px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px;
+    color: #79ffce;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0px;
+    transition: 0.5s;
+    font-family: var(--font-pes);
+    font-weight: medium;
+    
+}
+
+.botão{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #044441;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5;
+    
+
+}
+
+.pesquisa:hover > .pesquisa-txt{
+    width: 200px;
+    padding: 0px 6px;
+
+}
+    
+.pesquisa:hover > .botão{
+    background-color: white;
+    
+}
+
+
+
+main{
+    background-color: #121413;
+    margin-top: 0px;
+    min-width: 300px;
+    max-width: 1500px;
+    height: 1000px;
+    padding: 0px;
+}
+
+
+.gt{
+    background-color: #07885D;
+    width: 351px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(231, 255, 234);
+    font-family: var(--font-gts);
+    font-weight: 500;
+    font-size: 1.9em;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 5px;
+    
+}
+
+.gt::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+
+}
+
+.gt:hover{
+    transform: scale(1.03,1.03);
+    font-size: 2em;
+    font-weight: medium;
+}
+
+.gt:hover::after{
+    opacity: 1;
+}
+
+footer{
+    background-color: var(--cor5);
+    font-family: var(--font-mono);
+    color: white;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+footer:hover{
+    text-decoration: none;
+    color: #34db7f;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+    text-shadow: 0px 0px 3px #23da514f;
+    font-size: 0.9em;
+}
+
+/* Incio página 2 (Oque é um GT?) */
+
+body{
+    background-color: rgb(18, 20, 19);
+    height: 1000px;
+
+}
+
+.title-p2{
+    margin: 0px;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    padding-bottom: 0px;
+    font-size: 3.1em;
+    max-height: 120px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.315);
+    
+}
+
+
+.botão-voltar{
+    background-color:rgb(13, 114, 63) ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.288);
+    margin-bottom: 15px;
+    
+}
+
+
+.main2{
+    background-color: rgb(238, 238, 238);
+    max-width: 850px;
+    min-height: 1100px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.753);
+    border-radius: 10px;
+    margin: auto;
+    
+}
+
+.main2 h1{
+   font-family: var(--font-destaque);
+   color: black;
+}
+
+.main2 h2{
+   font-family: var(--font-destaque);
+   color: black;
+}
+
+.main2 p{
+    font-family: var(--font-pes);
+    margin: 15px 0px 15px 0px;
+    font-weight: 500;
+    text-indent: 0px;
+    line-height: 2em;
+    width: 620px;
+    padding-left: 10px;
+    font-size: 1.05em;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+strong{
+    color: #00a529;
+    font-weight: bolder;
+    font-size: 1.06em;
+    
+}
+
+#google{
+    color: rgb(25, 25, 241);
+    font-weight: bolder;
+    font-size: 1.06em;
+}
+
+#html{
+    color: orangered;
+    font-weight: bolder;
+    font-size: 1.06em;
+}
+
+.chan{
+    color: rgb(173, 34, 34);
+    font-weight: bolder;
+    font-size: 1.06em;
+}
+
+.gírias{
+    color: rgb(143, 23, 173);
+    font-size: 1.06em;
+}
+
+/* --------------------------------------- Inicio do FAQ -------------------------------------------*/
+ .main3{
+    background-color: rgb(238, 238, 238);
+    width: 750px;
+    height: 530px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.753);
+    border-radius: 10px;
+    margin: auto;
+ }
+
+ .main3 h1{
+    font-family: var(--font-destaque);
+    color: black;
+ }
+
+ .main3 h3{
+        font-family: var(--font-destaque);
+        color: black;
+}
+
+ .main3 p{
+    font-family: var(--font-pes);
+    margin: 15px 0px 15px 0px;
+    font-weight: 500;
+    text-indent: 0px;
+    line-height: 2em;
+    width: 650px;
+    padding-left: 10px;
+    font-size: 1.05em;
+    color: rgba(0, 0, 0, 0.781);
+}
+
